@@ -1,0 +1,17 @@
+{
+    "name": "Core.MenuScene",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0eaa40a15dc54ba408817683217d2c61",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
