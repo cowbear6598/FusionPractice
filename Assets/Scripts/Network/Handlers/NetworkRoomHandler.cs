@@ -1,20 +1,28 @@
 ﻿using Fusion;
+using SoapTools.SceneTransition;
+using UnityEngine;
 using VContainer;
 
 namespace Network
 {
     public class NetworkRoomHandler
     {
-        [Inject] private readonly NetworkView view;
+        [Inject] private readonly NetworkRunner       runner;
+        [Inject] private readonly NetworkSceneHandler sceneHandler;
+        [Inject] private readonly ISceneService       sceneService;
 
-        public void StartGame()
+        public async void StartGame()
         {
+            runner.ProvideInput = true;
+
             var startGameArgs = new StartGameArgs {
-                GameMode    = GameMode.Shared,
-                SessionName = "RoomName",
+                GameMode     = GameMode.Shared,
+                SessionName  = "room",
+                SceneManager = runner.GetComponent<NetworkSceneManagerDefault>(),
             };
-            
-            view.StartGame(startGameArgs);
+
+            await runner.StartGame(startGameArgs);
+            await sceneHandler.LoadScene("Game");
         }
     }
 }

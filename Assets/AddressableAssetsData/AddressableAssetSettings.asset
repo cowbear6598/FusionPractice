@@ -87,6 +87,7 @@ MonoBehaviour:
     m_ProfileVersion: 1
   m_LabelTable:
     m_LabelNames:
+    - scene
     - FusionScenes
   m_SchemaTemplates: []
   m_GroupTemplateObjects:

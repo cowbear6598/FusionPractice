@@ -21,6 +21,12 @@ MonoBehaviour:
     m_Address: Menu
     m_ReadOnly: 0
     m_SerializedLabels:
+    - scene
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 699e405526bbb194a839cb0f455dfcf3
+    m_Address: Game
+    m_ReadOnly: 0
+    m_SerializedLabels:
     - FusionScenes
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0

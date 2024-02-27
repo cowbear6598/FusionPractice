@@ -1,10 +1,6 @@
-﻿using VContainer;
-using VContainer.Unity;
+﻿using VContainer.Unity;
 
 namespace MenuScene
 {
-    public class MenuLifetimeScope : LifetimeScope
-    {
-        protected override void Configure(IContainerBuilder builder) { }
-    }
+    public class MenuLifetimeScope : LifetimeScope { }
 }
